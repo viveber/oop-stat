@@ -4,16 +4,17 @@ import "./index.css";
 import App from "./app";
 import * as serviceWorker from "./serviceWorker";
 
+  // Подключение библиотеки отрисовки диаграмм по тестовому файлу
+  // или переданному в ссылке с параметром path
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById("root"),
-  // Подключение библиотеки отрисовки диаграмм по тестовому файлу
-  // или переданному в ссылке с параметром path
   () => {
     const script = document.createElement("script");
-    script.innerHTML = `function getParameterByName(name) {
+    script.innerHTML = `
+    function getParameterByName(name) {
       var url = window.location.href;
       var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
         results = regex.exec(url);
@@ -34,16 +35,19 @@ ReactDOM.render(
       preview,
       title
     );
-    document.getElementById("file").addEventListener(
-      "change",
-      {
-        handleEvent: function (event) {
-          window.history.replaceState(null, null, window.location.pathname);
-          visualizer.showDiagramFromEvent(event);
+    var fileEl = document.getElementById("file");
+    if(fileEl) {
+      fileEl.addEventListener(
+        "change",
+        {
+          handleEvent: function (event) {
+            window.history.replaceState(null, null, window.location.pathname);
+            visualizer.showDiagramFromEvent(event);
+          },
         },
-      },
-      false
-    );
+        false
+      );
+    }
     var path = getParameterByName("path");
     if (path != null) {
       visualizer.showDiagramFromPath(path);

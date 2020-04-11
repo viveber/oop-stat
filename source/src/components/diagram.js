@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Paper, Typography } from "@material-ui/core";
 
 export default function Diagram() {
-  useEffect(() => {}, []);
-
+  // Элементы разметки, в которые подключается библиотека
+  // построения диаграмм
   return (
-    // Элементы разметки, в которые подключается библиотека 
-    // построения диаграмм
     <Paper className="paper" elevation={0}>
       <Typography variant="h6" gutterBottom>
         Диаграммы
