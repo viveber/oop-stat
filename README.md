@@ -3,7 +3,7 @@
 
 [Демонстрация работы](https://stankin.github.io/oop-stat/)
 
-[Исходный код](https://stankin.github.io/oop-stat/source/)
+[Исходный код c комментариями](https://github.com/stankin/oop-stat/tree/master/source)
 
 Общее [описание библиотеки](https://github.com/stankin/oop-stat/wiki)
 
