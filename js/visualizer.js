@@ -156,7 +156,7 @@ Visualizer.prototype.processDiagram = function (promise) {
   promise
     .then(
       (result) => {
-        window.json = result;
+        // window.json = result;
         var validator = new Validator();
         var valid = validator.validateJson(result);
         this.loader.style.display = "none";
