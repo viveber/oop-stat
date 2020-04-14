@@ -35,26 +35,17 @@
       {
         "id": 0,
         "value": "Программист",
-        "activities": [1, 2],
-        "count": 10,
-        "price": 2500,
-        "category": "employee"
+        "activities": [1, 2]
       },
       {
         "id": 1,
         "value": "DevOps инженер",
-        "activities": [1, 2],
-        "count": 5,
-        "price": 3500,
-        "category": "employee"
+        "activities": [1, 2]
       },
       {
         "id": 2,
         "value": "Менеджер проекта",
-        "activities": [1, 2],
-        "count": 4,
-        "price": 700,
-        "category": "employee"
+        "activities": [1, 2]
       }
     ]
   },
@@ -64,18 +55,12 @@
       {
         "id": 0,
         "value": "IDE",
-        "activities": [1, 2],
-        "count": 0,
-        "price": 999,
-        "category": "tools"
+        "activities": [1, 2]
       },
       {
         "id": 1,
         "value": "CI/CD система",
-        "activities": [1, 2],
-        "count": 2,
-        "price": 999,
-        "category": "tools"
+        "activities": [1, 2]
       }
     ]
   },
