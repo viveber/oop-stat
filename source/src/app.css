@@ -32,7 +32,7 @@ a {
 #graphContainer {
   /* width: 800px;
   height: 500px; */
-  min-height: 600px;
+  /* min-height: 600px; */
   margin: 20px 0;
 }
 
@@ -56,4 +56,20 @@ a {
   margin-right: 15px;
   outline: none;
   cursor: pointer;
+}
+
+.stats-download {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.info-img__container {
+  width: 100%;
+  text-align: center;
+}
+
+.info-image {
+  max-width: 600px;
+  margin: 20px 0;
 }

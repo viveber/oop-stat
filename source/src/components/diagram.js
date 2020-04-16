@@ -14,7 +14,9 @@ export default function Diagram() {
       <div id="resultText"></div>
       <div id="preview">
         {/* Заголовок диаграммы */}
-        <Typography variant="body1" id="title" gutterBottom></Typography>
+        <Typography variant="body1" id="title" gutterBottom>
+          Загрузите файл, чтобы построить диаграмму
+        </Typography>
         {/* Контейнер для построения */}
         <div id="graphContainer"></div>
       </div>

@@ -23,37 +23,43 @@ ReactDOM.render(
       return decodeURIComponent(results[2]);
     }
 
-    var loader = document.getElementById("loader");
-    var preview = document.getElementById("preview");
-    var resultText = document.getElementById("resultText");
+    var path = getParameterByName("path");
+
     var container = document.getElementById("graphContainer");
     var title = document.getElementById("title");
-    var visualizer = new Visualizer(
-      loader,
-      resultText,
-      container,
-      preview,
-      title
-    );
-    var fileEl = document.getElementById("file");
-    if(fileEl) {
-      fileEl.addEventListener(
-        "change",
-        {
-          handleEvent: function (event) {
-            window.history.replaceState(null, null, window.location.pathname);
-            visualizer.showDiagramFromEvent(event);
-          },
-        },
-        false
+
+    var loader = document.getElementById("loader");
+      var preview = document.getElementById("preview");
+      var resultText = document.getElementById("resultText");
+      var visualizer = new Visualizer(
+        loader,
+        resultText,
+        container,
+        preview,
+        title
       );
-    }
-    var path = getParameterByName("path");
+      var fileEl = document.getElementById("file");
+      if(fileEl) {
+        fileEl.addEventListener(
+          "change",
+          {
+            handleEvent: function (event) {
+              container.style.minHeight = '600px'; 
+              window.history.replaceState(null, null, window.location.pathname);
+              visualizer.showDiagramFromEvent(event);
+            },
+          },
+          false
+        );
+      }
+
     if (path != null) {
+      container.style.minHeight = '600px'; 
+      title.innerHtml = '';
       visualizer.showDiagramFromPath(path);
-    } else {
-      visualizer.showDiagramFromPath('/oop-stat/test.json');
-    }`;
+    } 
+    
+    `;
     document.body.appendChild(script);
   }
 );

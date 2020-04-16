@@ -7,6 +7,7 @@ import JSONUpload from "./components/json-upload";
 import Diagram from "./components/diagram";
 import Stats from "./components/stats";
 import { Button, ButtonGroup } from "@material-ui/core";
+import Info from "./components/info";
 
 function App() {
   return (
@@ -16,6 +17,10 @@ function App() {
           <Grid item xs={12}>
             {/* Информация о проекте */}
             <About />
+          </Grid>
+          <Grid item xs={12}>
+            {/* Подробная информация о проекте */}
+            <Info />
           </Grid>
           <Grid item xs={12}>
             {/* Блок загрузки файла модели */}
