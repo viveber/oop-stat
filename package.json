@@ -1,0 +1,26 @@
+{
+  "name": "oop-stat",
+  "version": "1.0.0",
+  "description": "Библиотека служебных математических (статистических) функций",
+  "main": "precache-manifest.2cc29115f342ea54fbdd131fb743339e.js",
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stankin/oop-stat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stankin/oop-stat/issues"
+  },
+  "homepage": "https://github.com/stankin/oop-stat#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0"
+  }
+}
