@@ -1,4 +1,4 @@
-### Landing Page для команды [Random](https://github.com/viveber/VeberVA/blob/main/Семинары/семинар%203-4.md) (Разработка генератора случайных чисел для определения победителей розыгрыша)
+### Landing Page для команды [Random](https://github.com/viveber/VeberVA/blob/main/Random.md) (Разработка генератора случайных чисел для определения победителей розыгрыша)
 
 # Сбор требований по зонам ответственности
 ## 1. РП (Владелец продукта) - [Вебер](https://github.com/viveber/VeberVA)
